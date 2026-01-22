@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f6f8;
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal img {
+  max-width: 70%;
+  max-height: 80%;
+  border-radius: 14px;
+  background: white;
+  padding: 10px;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navigation */
+.nav {
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  background: rgba(255,255,255,0.8);
+  border: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 50%;
+}
+
+.prev { left: 5%; }
+.next { right: 5%; }
